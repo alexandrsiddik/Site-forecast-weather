@@ -1,0 +1,61 @@
+@import './reset.css';
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px 50px;
+    background: linear-gradient (92.7deg, #4CB8C4 0%, •#3CD3AD 100%) #232323
+}
+
+.title{
+    margin-bottom: 20px;
+    font-family: 'Rubik';
+    font-weight: 700; 
+    font-size: 44px;
+    line-height: 1.18; 
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form{
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.input{
+    flex-grow: 1;
+    padding: 15px;
+
+    font-weight: 300; 
+    font-size: 20px; 
+    line-height: 1; 
+    color: #000000;
+}
+
+.button{
+    width: 145px;
+    height: 54px;
+    background: #E5464F; 
+    border-radius: 6px;
+
+    font-weight: 500; 
+    font-size: 20px; 
+    line-height: 1; 
+    color: #FFFFFF;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+    background: #f5313b;
+
+}
