@@ -10,60 +10,76 @@ body {
 }
 
 .header{
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 980px;
+    height: 154px;
+
     padding: 40px 15px 50px;
-    background: linear-gradient (92.7deg, #4CB8C4 0%, •#3CD3AD 100%) #232323
+    align-items: center;
+    
+    background: linear-gradient(360deg, #FFFFFF 0%, #6DD5FA 50%, #2980B9 100%);
+
 }
 
 .title{
     margin-bottom: 20px;
-    font-family: 'Rubik';
-    font-weight: 700; 
+    font-family: Rubik;
     font-size: 44px;
-    line-height: 1.18; 
+    font-weight: 700;
+    line-height: 52.14px;
     text-align: center;
+
     color: #FFFFFF;
+
 }
 
 .form{
     display: flex;
     width: 460px;
-    justify-content: space-between;
-    height: 54px;
-    background: #FFFFFF;
+    height: 44.95px;
+    top: 93.23px;
+    left: 254px;
     border-radius: 6px;
+
+    background: #FFFFFF;
 }
 
 .input{
-    flex-grow: 1;
     padding: 15px;
+    border-radius: 6px;
+    
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23.7px;
+    text-align: left;
 
-    font-weight: 300; 
-    font-size: 20px; 
-    line-height: 1; 
     color: #000000;
+
+
 }
 
 .button{
-    width: 145px;
-    height: 54px;
-    background: #E5464F; 
-    border-radius: 6px;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.7px;
+    text-align: center;
 
-    font-weight: 500; 
-    font-size: 20px; 
-    line-height: 1; 
     color: #FFFFFF;
 
-    transition: background-color 0.2s ease-in;
+    width: 165px;
+    height: 44.95px;
+    top: 93.23px;
+    left: 569px;
+    border-radius: 6px;
+    background: #46DCA6;
+
 }
 
 .button:hover {
-    background: #f5313b;
-
+    background: #a5f7d9;
 }
 
 .card {
