@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700,);
 
 body {
     display: flex;
@@ -15,6 +16,7 @@ body {
     width: 980px;
     height: 154px;
 
+    font-family: 'Rubik';
     padding: 40px 15px 50px;
     align-items: center;
     
@@ -49,15 +51,13 @@ body {
     padding: 15px;
     border-radius: 6px;
     
-    font-family: Rubik;
+    font-family: 'Rubik';
     font-size: 20px;
     font-weight: 300;
     line-height: 23.7px;
     text-align: left;
 
     color: #000000;
-
-
 }
 
 .button{
@@ -119,17 +119,25 @@ body {
 }
 
 .card-city span {
-    display: inline-block;
-    vertical-align: text-top;
-
-    padding: 3 px 5px;
-    background: #E5464F;
+    width: 35.25px;
+    height: 10.57px;
+    top: 284px;
+    left: 533px;
     border-radius: 6px;
 
-    color: #FFFFFF;
-    font-weight: 500;
+    background: #EEDD43;
+
+    width: 22.19px;
+    height: 13.71px;
+    top: 287.43px;
+    left: 439.53px;
+    
+    font-family: Rubik;
     font-size: 12px;
-    line-height: 1;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: right;
+    color: #FFFFFF;    
 }
 
 .card-weather{
@@ -147,6 +155,13 @@ body {
 
 .card-value sup {
     font-size: 50%;
+}
+
+.card-img {
+    width: 164.5px;
+    height: 137.14px;
+    top: 339.86px;
+    left: 522.33px;
 }
 
 .card-description {
