@@ -6,7 +6,17 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
-    
+
+    background: url(https://s3-alpha-sig.figma.com/img/665d/15ee/05e15bdd3b874c9a37eae2db799e9a47?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YwCxthnaeZSvvjMJrr9yWh9-gbD~8gcQtNBo7WOBA~bG6btjsi-gK6PxTHJJmqALyQ5CqvJuEtYA7T4kFIQnz82vg71jZSF9esdDxiu-jQ49C9ZG269I~3GU6Ci8QGOvPB3q7hWyIzCnepkTAyU5FJ-4Ow4aiFSinNj9cGSllV40kv3KkiMHtvDU7lk0vdYDz8KdClRKkLK20qwv5BB41kVHKGZ3XM4TjiaMns1vBblLylxE3HAgDqCTDipuY2HW6djCOTDVyP5OiGBvFLn37dsd5Pmvzv-Df5iZXymaG9g~F5Ea0mMJ2UCF6jDoIvZ-uSSuWQdU4Zc4ragUew71wQ__);
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+
+    background-size: contain;
+    background-size: 2000px auto;
+
+    bottom: 100px;
+
     font-family: 'Rubik', sans-serif;
 }
 
@@ -175,13 +185,16 @@ body {
     width: 100%;
     height: 32px;
     top: 655px;
+    left: 0px;
+    bottom: 0px;
 
     background: #E3F1EE;
 
+    position: fixed;
     width: 100%;
     height: 17px;
-    top: 662px;
-    left: 451px;
+    top: 707px;
+
 
     
     font-family: 'Rubik';
