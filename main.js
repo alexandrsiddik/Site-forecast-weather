@@ -1,6 +1,5 @@
 const apiKey = '6854aa20d0964c568bd102040242006'
 
-
 /* Получаем название города */
 const form = document.querySelector('#form');
 const input = document.querySelector('#inputCity');
@@ -14,7 +13,7 @@ form.onsubmit = function (e) {
    console.log(city);
 }
 
-const url = `http://api.weatherapi.com/v1/current.json?key=6854aa20d0964c568bd102040242006&q=${city};`
+const url = `http://api.weatherapi.com/v1/current.json?key=6854aa20d0964c568bd102040242006&q=London;`
 
 fetch(url).then((response) => {
      return response.json()
