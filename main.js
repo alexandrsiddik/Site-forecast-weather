@@ -21,5 +21,9 @@ fetch(url)
 })
    .then((data) => {
       console.log(data)
+      console.log(data.location.name);
+      console.log(data.location.country);
+      console.log(data.current.temp_c);
+      console.log(data.current.condition.text);
 })
 }
