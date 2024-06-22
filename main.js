@@ -1,3 +1,7 @@
+import condition from "./condition.js";
+
+console.log(condition);
+
 const apiKey = '6854aa20d0964c568bd102040242006'
 
 /* Получаем название города */
@@ -30,7 +34,7 @@ fetch(url)
 
       const html = `<div class="card">${data.error.message}</div>`;
 
-      header.insertAdjacentHTML("afterend", html)
+      header.insertAdjacentHTML("afterend", html);
 
    } else {
 
@@ -49,6 +53,25 @@ fetch(url)
          <div class="card-desc">${data.current.condition.text}</div>
     </div>`;
     header.insertAdjacentHTML("afterend", html);
+
+    console.log(data.current.condition.code);
+
+      const info = condition.find(function(obj) {
+         if (obj.code === data.current.condition.code) return true
+         })
+         console.log(info);
+         console.log(info.languages[23]['day_text']);
+
+         const condition = data.current.is_day ? info.languages[23]['day_text'] : info.languages[23]['night_text'];
+
+      const weatherData = {
+         name: data.location.name, 
+         country: data.location.country, 
+         temp: data.current.temp_c,
+          condition: info.languages[23]['day_text'],
+      }
+
+      showCard(weatherData)
 
       }
 })
