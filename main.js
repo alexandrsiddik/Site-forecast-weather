@@ -41,6 +41,7 @@ fetch(url)
       const prevCard = document.querySelector('.card');
       if(prevCard) prevCard.remove();
 
+function showCard() {
       const html = `<div class="card">
 
         <h2 class="card-city">${data.location.name} <span>${data. location.country}</span></h2>
@@ -54,6 +55,7 @@ fetch(url)
     </div>`;
 
     header.insertAdjacentHTML("afterend", html);
+}
 
     console.log(data.current.condition.code);
 
@@ -64,6 +66,14 @@ fetch(url)
          console.log(info.languages[23]['day_text']);
 
          const conditions = data.current.is_day ? info.languages[23]['day_text'] : info.languages[23]['night_text'];
+
+         const weatherData = {
+            name: data.location.name,
+            country: data.location.country,
+            temp: data.current.temp_c,
+            conditions: conditions,
+         }
+         showCard(weatherData);
 
       }
 }) 
