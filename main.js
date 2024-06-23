@@ -55,6 +55,15 @@ fetch(url)
 
     header.insertAdjacentHTML("afterend", html);
 
+    console.log(data.current.condition.code);
+
+      const info = condition.find (
+      (obj) => obj.code === data.current.condition.code
+      );
+         console.log(info);
+         console.log(info.languages[23]['day_text']);
+
+         const conditions = data.current.is_day ? info.languages[23]['day_text'] : info.languages[23]['night_text'];
 
       }
 }) 
